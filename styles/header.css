@@ -1,0 +1,148 @@
+.header{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 60px;
+
+        background-color: white;
+        border-bottom-width: 1px;
+        border-bottom-style: solid ;
+        border-color: rgb(201, 201, 201) ;
+
+        z-index: 100;
+        
+    }
+.left{
+    display: flex;
+    align-items: center;
+
+}
+.hm{
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.yl{
+    height: 35px;
+    display: flex;
+}
+
+.middle{
+    flex: 1;
+    max-width: 550px;
+    margin-left: 70px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+}
+.search-icon{
+    height: 35px;
+    margin-top: 4px;
+
+}
+.sb{
+    height: 49px;
+    width: 80px;
+    border-width: 1px;
+    background-color: rgb(240, 240, 240);
+    margin-left: -1px;
+    border-color: rgb(192,192,192);
+    border-style: solid;
+}
+.search-voice{
+    border-width: none;
+}
+.svb{
+    height: 48px;
+    width: 48px;
+    margin-left: 10px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: aliceblue;
+    background-color: (240,240,240);
+}
+.ms{
+    flex: 1;
+    height: 45px;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    border-style: solid;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 0;
+}
+.ms::placeholder{
+    font-family: italic,arial;
+    font-size: 20px;
+}
+.right{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.uicon{
+    height: 30px;
+}
+.yaicon{
+    height: 30px;
+}
+.nicon{
+    height: 30px;
+}
+.u-icon{
+    height: 35px;
+    border-radius: 16px;
+}
+.noti{
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background-color: rgb(174, 2, 2);
+    padding: 2px 6px 2px 6px ;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.svb .tooltip,.sb .tooltip,
+.uic .tooltip,.aic .tooltip
+{
+    position: absolute;
+    background-color: rgb(212, 211, 211);
+    padding: 4px 8px 4px 8px;
+    bottom: -25px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.svb:hover .tooltip,.sb:hover .tooltip,
+.uic:hover .tooltip,.aic:hover .tooltip,
+.nic:hover .tooltip{
+    opacity: 1;
+}
+
+.svb,.sb,.uic,.aic,.nic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nic .tooltip{
+    position: absolute;
+    background-color: rgb(212, 211, 211);
+    padding: 4px 8px 4px 8px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
